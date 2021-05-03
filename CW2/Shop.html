@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+
+
+    <!-- Snipcart stuff -->
+    <link rel="preconnect" href="https://app.snipcart.com" />
+    <link rel="preconnect" href="https://cdn.snipcart.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.snipcart.com/themes/v3.0.28/default/snipcart.css"
+    />
+
+
+<!-- Gets font & icons used in page from 3rd party website -->
+    <script
+      src="https://kit.fontawesome.com/a89069ad2d.js"
+      crossorigin="anonymous"
+    ></script>
+<style>
+/* creates background image size, in this case border, and padding */
+body {
+  background-image: url('Images/boarder3.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 45px;
+}
+/* styles title text and positioning */
+.title{
+  text-align: center;
+  padding: 1px 10px;
+  text-decoration: underline;
+}
+
+/* defines typr of menu used */
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 2;
+      overflow: hidden;
+      background-color: black;
+        }
+
+    li {
+      float: left;
+        }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        border-right:1px solid white;
+         }
+
+    li a:hover {
+          background-color: green;
+        }
+
+/* Adjusts page to fit with user altering the size of the window */
+  @media only screen and (max-width: 700px) {
+        .responsive {
+          width: 49.99999%;
+          margin: 6px 0;
+              }
+            }
+
+  @media only screen and (max-width: 500px) {
+              .responsive {
+              width: 100%;
+              }
+            }
+/* defines size of footer as well as colours of text & background */
+    .footer__container{display:flex;
+        justify-content:space-between;
+        width:1300px;
+        height: 50px;
+        max-width:1500px;
+        border: 2px solid black;
+        padding: 10px;
+        background-color: black;
+        color: white;
+        line-height: 1.8;
+        }
+/* styles the text in footer */
+    .footer__copy{
+        text-transform:uppercase;
+        margin-right:16px;
+        font-weight:700;
+        font-size:12px;
+        }
+
+        .footer__socials{display:flex}
+        .footer__icon{height:16px;width:16px;margin-right:24px;fill:#111}
+        .footer__icon:hover{transition:all .2s;fill:#429bfc}
+
+/* defines audio button psitioning and colours used */
+      .art1sound {
+        background-color: black;
+        float: right;
+        }
+
+      .art2sound {
+        background-color: black;
+        float: right;
+      }
+
+    .art3sound {
+      background-color: black;
+      float: right;
+  }
+  .art4sound {
+    background-color: black;
+    float: right;
+}
+
+.buttontext{
+  float: right;
+}
+        .text{
+          text-align: center;
+          padding: 35px 10px;
+          line-height: 3;
+        }
+
+        .content {
+          margin: 20px 0;
+        }
+
+        .art-listing {
+          display: flex;
+          align-items: flex-start;
+        }
+/* defines image size, positioning and adds a border */
+        .art-listing img {
+          width: 400px;
+          height: 320px;
+          margin: 10px;
+          padding: 5px;
+          border: 2px solid black
+        }
+
+        .art-listing .details {
+          margin: 10px;
+        }
+
+        .checkout{
+          padding: 10px;
+
+        }
+        </style>
+  </head>
+  <body>
+
+<!-- Adds a title and defines it in order to be able to change the style/positioning -->
+    <div class="title">
+      <h1>The Luxury Art Fair.</h1>
+    </div>
+
+<!-- Creates interactive menu with links to appropriate pages -->
+    <ul>
+      <li><a href="file:///Users/nathan/Desktop/Multimedia/CW2/Homepage.html">Home</a></li>
+      <li><a href="file:///Users/nathan/Desktop/Multimedia/CW2/About.html">About</a></li>
+      <li style="float:right"><a class="active" href="#Shop">Shop</a></li>
+    </ul>
+
+<!-- Checkout feature added through snipcart link, includes; amount of items, pricing and total of selected items  -->
+<div class="checkout">
+    <div>
+      <span class="snipcart-checkout">
+        <h4>Shopping Cart</h4>
+        <i class="fas fa-shopping-cart"></i>
+        <span class="snipcart-total-price"></span>
+        (<span class="snipcart-items-count"></span>)
+      </span>
+    </div>
+    </header>
+</div>
+
+<!-- Creates button desinged to read the first art section for user -->
+<div class="buttontext">
+<b>Read Descrption </b>
+</div>
+<br>
+    <div class="art1sound">
+      <audio controls>
+    <source src="Audio/Art1Sound.ogg" type="audio/ogg">
+    <source src="Audio/Art1Sound.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+  </audio>
+      </div>
+
+<!-- Creates second art section with image, description and
+ability to change; the format, amount desired, add to cart and show how much it would cost  -->
+    <div class="content">
+      <section class="art-listing">
+        <img src="Images/art1.jpg" alt="art1" />
+        <div class="details">
+          <h1>A City on a Rock</h1>
+          <p>Artist: Trujillo Juan</p>
+          <p>Size: 16" x 14"</p>
+          <p>Description: Acrylic and graphite on a canvas covered panel</p>
+          <p>£240.00</p>
+          <button
+            class="snipcart-add-item"
+            data-item-id="art1.jpg"
+            data-item-price="240.00"
+            data-item-url="https://thomcorah.github.io/dmu-multimedia/resources/tshirt-shop/"
+            data-item-description="Acrylic and graphite on a canvas covered panel."
+            data-item-image="Images/art1.jpg"
+            data-item-name="A City on a Rock"
+            data-item-custom1-name="Format"
+            data-item-custom1-options="Physical|Digital"
+          >
+            > Add to cart
+          </button>
+        </div>
+      </section>
+
+<!-- Creates button desinged to read the second art section for user -->
+<div class="buttontext">
+<b>Read Descrption </b>
+</div>
+<br>
+      <div class="art2sound">
+        <audio controls>
+      <source src="Audio/Art2Sound.ogg" type="audio/ogg">
+      <source src="Audio/Art2Sound.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio>
+        </div>
+
+<!-- Creates second art section with image, description and
+ability to change; the format, amount desired, add to cart and show how much it would cost  -->
+      <section class="art-listing">
+        <img src="Images/Art22.jpg" alt="TShirt design 1" />
+        <div class="details">
+          <h1>The Blue Boy</h1>
+          <p>Artist: Jake Wood-Evans</p>
+          <p>Size: 16" x 14"</p>
+          <p>Description: Acrylic pastels on a canvas covered panel</p>
+          <p>£329.00</p>
+          <button
+            class="snipcart-add-item"
+            data-item-id="art2.jpg"
+            data-item-price="329.00"
+            data-item-url="https://thomcorah.github.io/dmu-multimedia/resources/tshirt-shop/"
+            data-item-description="Acrylic pastels on a canvas covered panel."
+            data-item-image="Images/Art22.jpg"
+            data-item-name="The Blue Boy"
+            data-item-custom1-name="Format"
+            data-item-custom1-options="Physical|Digital"
+          >
+            > Add to cart
+          </button>
+        </div>
+      </section>
+
+<!-- Creates button desinged to read the third art section for user -->
+<div class="buttontext">
+<b>Read Descrption </b>
+</div>
+<br>
+      <div class="art3sound">
+        <audio controls>
+      <source src="Audio/Art3Sound.ogg" type="audio/ogg">
+      <source src="Audio/Art3Sound.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio>
+        </div>
+
+<!-- Creates third art section with image, description and
+ability to change; the format, amount desired, add to cart and show how much it would cost  -->
+      <section class="art-listing">
+        <img src="Images/art3.jpg" alt="TShirt design 1" />
+        <div class="details">
+          <h1>'Untitled'</h1>
+          <p>Artist: Baka</p>
+          <p>Size: 17" x 14"</p>
+          <p>Description: Hand painted by a gorilla by the name of Baka. </p>
+          <p>£470.00</p>
+          <button
+            class="snipcart-add-item"
+            data-item-id="art3.jpg"
+            data-item-price="470.00"
+            data-item-url="https://thomcorah.github.io/dmu-multimedia/resources/tshirt-shop/"
+            data-item-description="Hand painted by a gorilla by the name of Baka."
+            data-item-image="Images/art3.jpg"
+            data-item-name="Untitled"
+          >
+            Add to cart
+          </button>
+        </div>
+      </section>
+    </div>
+
+<!-- Creates button desinged to read the fourth art section for user -->
+<div class="buttontext">
+<b>Read Descrption </b>
+</div>
+<br>
+    <div class="art4sound">
+      <audio controls>
+    <source src="Audio/Art4Sound.ogg" type="audio/ogg">
+    <source src="Audio/Art4Sound.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+  </audio>
+      </div>
+
+<!-- Creates fourth art section with image, description and
+ability to change; the format, amount desired, add to cart and show how much it would cost  -->
+    <section class="art-listing">
+      <img src="Images/art4.jpg" alt="TShirt design 1" />
+      <div class="details">
+        <h1>Magic Hour</h1>
+        <p>Artist: Rebecca Katz</p>
+        <p>Size: 16" x 14"</p>
+        <p>Description: Acrylic and graphite on a canvas covered panel</p>
+        <p>£290.00</p>
+        <button
+          class="snipcart-add-item"
+          data-item-id="art4.jpg"
+          data-item-price="290.00"
+          data-item-url="https://thomcorah.github.io/dmu-multimedia/resources/tshirt-shop/"
+          data-item-description="Acrylic and graphite on a canvas covered panel."
+          data-item-image="Images/art4.jpg"
+          data-item-name="Magic Hour"
+        >
+          Add to cart
+        </button>
+      </div>
+    </section>
+  </div>
+
+<!-- Link to snipcart themes to style the footer -->
+    <script
+      async
+      src="https://cdn.snipcart.com/themes/v3.0.28/default/snipcart.js"
+    ></script>
+    <div
+      hidden
+      id="snipcart"
+      data-api-key="MDExYmVkYzEtMDhkYS00OTliLWE0MzctNTIzNjZjOTlmYjA4NjM3NDgzOTkzNTY0NDU2Mjg0"
+      data-config-modal-style="side"
+    ></div>
+<!-- Creates footer (in defined box) with contact details -->
+    <div class="footer">
+      <div class="footer__container">
+        <div class="footer__copy">Luxury Art Fair Ltd.</div>
+        <p></p>
+        <i>For Equiries Email : Theluxuryartfair@hotmail.com</i>
+          <i>Or Call : 07504 35828</i>
+    <div class="footer__socials"><a href="Shop.html">
+
+        </div>
+      </div>
+  </body>
+</html>

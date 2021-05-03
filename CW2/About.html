@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+
+    <style>
+/* creates background image size, in this case border, and padding */
+        body {
+          background-image: url('Images/boarder3.jpg');
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          padding: 45px;
+        }
+/* defines typr of menu used */
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 2;
+      overflow: hidden;
+      background-color: black;
+        }
+
+    li {
+      float: left;
+        }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        border-right:1px solid white;
+         }
+
+    li a:hover {
+          background-color: green;
+        }
+/* styles text and positioning as well as spacing*/
+    .text{
+      text-align: center;
+      padding: 35px 10px;
+      line-height: 3;
+    }
+/* styles title text and positioning */
+    .title{
+      text-align: center;
+      padding: 1px 10px;
+      text-decoration: underline;
+    }
+
+/* Adjusts page to fit with user altering the size of the window */
+    @media only screen and (max-width: 700px) {
+      .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+      }
+    }
+
+    @media only screen and (max-width: 500px) {
+      .responsive {
+        width: 100%;
+      }
+    }
+/* defines size of footer as well as colours of text & background */
+    .footer__container{display:flex;
+      justify-content:space-between;
+      width:1300px;
+      height: 50px;
+      max-width:1500px;
+      border: 2px solid black;
+      padding: 10px;
+      background-color: black;
+      color: white;
+      line-height: 1.8;
+    }
+/* styles the text in footer */
+    .footer__copy{
+      text-transform:uppercase;
+      margin-right:16px;
+      font-weight:700;
+      font-size:12px;
+    }
+
+    .footer__socials{display:flex}
+    .footer__icon{height:16px;width:16px;margin-right:24px;fill:#111}
+    .footer__icon:hover{transition:all .2s;fill:#429bfc}
+
+/* defines audio button positioning and colours used */
+    .button {
+      background-color: black;
+      border: 2px solid black;
+      color: white;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      float: right;
+    }
+    .button2 {
+      background-color: black;
+      border: 2px solid black;
+      color: white;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      float: left;
+    }
+
+/* defines image size and division padding */
+    img {
+      height: 200px;
+      width: 30%;
+    }
+
+    div {
+      padding: 10px;
+    }
+/* creates padding for image and position of it on the page */
+    .img1 {
+      float: left;
+      padding: 10px;
+    }
+
+    .img2 {
+      float: right;
+      padding: 10px
+    }
+
+    .img3 {
+      float: left;
+      padding: 10px;
+    }
+
+    .para {
+      overflow: auto;
+    }
+
+      </style>
+      </head>
+      <body>
+<!-- Creates title -->
+    <div class="title">
+      <h1>The Luxury Art Fair.</h1>
+    </div>
+<!-- Menu with other pages linked -->
+    <ul>
+      <li><a href="file:///Users/nathan/Desktop/Multimedia/CW2/Homepage.html">Home</a></li>
+      <li><a href="file:///Users/nathan/Desktop/Multimedia/CW2/Shop.html">Shop</a></li>
+      <li style="float:right"><a class="active" href="file:///Users/nathan/Desktop/Multimedia/CW2/About.html">About</a></li>
+    </ul>
+<!-- Adds breaks between the menu and first paragraph for spacing -->
+<br>
+<br>
+<br>
+<br>
+<!-- Creates button desinged to read the first section for user -->
+    <div class="button">
+      <audio controls>
+    <source src="Audio/Sec1.ogg" type="audio/ogg">
+    <source src="Audio/Sec1.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+  </audio>
+      </div>
+      </div>
+
+<!-- Image with text alligned next to it for the first paragraph of the 'About' page -->
+<div class="para">
+  <img class="img1" src="Images/art1.jpg" alt="art1" width="170" height="170">
+  <h1>The Luxury Art Fair is the art marketplace</h1>
+  <p>We sell art that changes lives. Art that awakens our imagination, transforms our homes and expresses who we really are.
+    At The Luxury Art Fair we’re building a world where artists can make a living doing what they love. Where anyone can easily find and buy original art, no matter their taste or budget.</p>
+</div>
+<!-- Creates button desinged to read the second section for user -->
+<div class="button2">
+  <audio controls>
+<source src="Audio/sec2.ogg" type="audio/ogg">
+<source src="Audio/sec2.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+  </div>
+  </div>
+<!-- Image with text alligned next to it for the second paragraph of the 'About' page -->
+<div class="para">
+  <img class="img2" src="Images/HouseArt.png" alt="art1" width="170" height="170">
+  <h1>Direct from the artist to your home</h1>
+  <p>Whether you’re an art lover or art curious, we connect you directly with independent artists around the world.
+    Every single piece is original and signed by the artist, carrying its own unique story.</p>
+</div>
+<!-- Creates button desinged to read the third section for user -->
+<div class="button">
+  <audio controls>
+<source src="Audio/sec3.ogg" type="audio/ogg">
+<source src="Audio/sec3.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+  </div>
+  </div>
+<!-- Image with text alligned next to it for the third paragraph of the 'About' page -->
+<div class="para">
+  <img class="img3" src="Images/artist.jpeg" alt="art1" width="170" height="170">
+  <h1>A sustainable art market for all</h1>
+  <p>We founded The Luxury Art Fair because artists exist everywhere - as do people who value authentic, handmade works of art.
+   We believe in ‘made to last,’ in ethical production, in building a business that makes all of our lives better by supporting creativity in communities around the world.</p>
+</div>
+<!-- Adds breaks between the menu and first paragraph for spacing -->
+<br>
+<!-- Creates footer (in defined box) with contact details -->
+<div class="footer">
+  <div class="footer__container">
+    <div class="footer__copy">Luxury Art Fair Ltd.</div>
+    <p></p>
+    <i>For Equiries Email : Theluxuryartfair@hotmail.com</i>
+      <i>Or Call : 07504 35828</i>
+<div class="footer__socials"><a href="https://www.instagram.com/">
+
+    </div>
+  </div>
+    </body>
